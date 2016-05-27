@@ -7,11 +7,11 @@ class conexaoSany {
     private $password = "";
     private $port = "3306";
     private $con = NULL;
-    private $dbname = "sany-portifolio";
+    private $dbname = "sany-portfolio";
 
     public function openSany() {
 
-        $this->con = new PDO('mysql:host=' . $this->host . ';port=' . $this->port . ';dbname=' . $this->dbname . '', $this->user, $this->password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')); //é uma maneira de forçar PDO usar O UTF-8 para fazer a conexão com mysql
+        $this->con = new PDO('mysql:host=' . $this->host . ';port=' . $this->port . ';dbname=' . $this->dbname . '', $this->user, $this->password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')); //ï¿½ uma maneira de forï¿½ar PDO usar O UTF-8 para fazer a conexï¿½o com mysql
         return $this->con;
     }
 
@@ -24,10 +24,10 @@ class conexaoSany {
 
         if (!$this->con) {
 
-            echo "<h3> O sistema não está conectado a [$this->dbname] em [$this->host]</h3>";
+            echo "<h3> O sistema nï¿½o estï¿½ conectado a [$this->dbname] em [$this->host]</h3>";
         } else {
 
-            echo "<h3> O sistema está conectado a [$this->dbname] em [$this->host]</h3>";
+            echo "<h3> O sistema estï¿½ conectado a [$this->dbname] em [$this->host]</h3>";
         }
     }
 
