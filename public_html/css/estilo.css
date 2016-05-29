@@ -3,10 +3,21 @@
 html,body{
     margin: 0;
     padding: 0;
-    height: 100%;
     background: #EBEBEB;
     text-align: center;
     font-family: Trebuchet MS;
+}
+
+#bloqueioPagina{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    z-index: 150;
+    display: none;
+    background: rgba(0,0,0,0.5);
 }
 
 header{
@@ -70,7 +81,7 @@ menu{
     transition: 150ms;
 }
 
-.menuItem{
+#menu-cabecalho .menuItem{
     float:left;
     max-width: 137px;
 }
@@ -112,7 +123,7 @@ menu{
     text-decoration: none;
 }
 
-.menuLink{
+#menu-cabecalho .menuLink{
     text-align: center;
     border: solid;
     border-width: 0;
@@ -125,7 +136,7 @@ menu{
     transition: 150ms;
 }
 
-.menuLink:hover{
+#menu-cabecalho .menuLink:hover{
     transition: 150ms;
     padding: 0 25px 7px 25px;
     border-width: 0 0 8px 0;
@@ -147,6 +158,76 @@ menu{
     transition:200ms;
 }
 
+.menu-compacto-trigger{
+    padding: 10px;
+    margin: 40px 0 0 210px;
+    font-size: 14pt;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 200;
+    transition: 150ms;
+    display: none;
+}
+
+.menu-compacto-trigger img{
+    margin: 0;
+    transition: 150ms;
+}
+
+.menuCompactoTriggerAtivo{
+    background: #FF3264;
+    transition: 150ms;
+}
+
+.menuCompactoTriggerAtivo img{
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transition: 150ms;
+}
+
+#menu-compacto{
+    position: absolute;
+    background: #FF3264;
+    top: 80px;
+    right: 0;
+    height: 600px;
+    margin: 0 !important;
+    padding: 0;
+    display: block;
+    width: 0;
+    z-index: 200;
+    text-align: right;
+    transition: 150ms;
+    display: none
+}
+
+.menuCompactoVisivel{
+    width: 250px !important;
+    transition: 150ms;
+}
+
+#menu-compacto a{
+    font-size: 14pt;
+    padding: 10px;
+    display: block;
+    color: #EBEBEB;
+    text-decoration: none;
+    text-align: right;
+    transition: 150ms;
+}
+
+#menu-compacto a:hover{
+    color: #4C4B4B;
+    transition: 150ms;
+}
+
+#menu-compacto .subMenu{
+    background: rgba(0,0,0,0.1);
+    display: none;
+}
+
 main{
     min-height: calc(100% - 168px);
     position:relative;
@@ -161,35 +242,49 @@ footer{
     height: 88px;
     width: 100%;
     margin: 50px 0 0 0;
+    transition: 300ms;
 }
 
 #media{
     height: 58px;
     width: 450px;
     margin: 0 auto;
+    transition: 300ms;
 }
 
 #media img{
     width: 30px;
+    transition: 300ms;
 }
 
 .logoRodape{
     height: 30px;
     width: auto !important;
     float: left;
+    transition: 300ms;
+}
+
+.rodapeReduzido{
+    height: 200px;
+    transition: 300ms;
 }
 
 .rodapeReduzido #media{
-    background: red;
     height: 100px;
     width: 250px;
+    transition: 300ms;
 }
 
 .rodapeReduzido .logoRodape{
-    background: yellow;
     float: none;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0 50px;
+    transition: 300ms;
+}
+
+.rodapeReduzido a{
+    margin: 0 26px !important;
+    transition: 300ms;
 }
 
 #media a, .logoRodape{
@@ -229,7 +324,13 @@ footer{
     text-align: center;
     line-height: 30px;
     color: #ECECEC;
-    font-size: 0.5em;
+    font-size: 12pt;
+    transition: 300ms;
+}
+
+.rodapeReduzido #copyright{
+    margin: 20px auto;
+    transition: 300ms;
 }
 
 .conteudo{
@@ -329,7 +430,6 @@ footer{
     float:left;
     width: fit-content;
     margin: 20px;
-    background: yellow;
 }
 
 .conteudoMeio h1{
