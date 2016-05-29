@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once("contatoClass.php");
 class contatoController{
     private $contato;
