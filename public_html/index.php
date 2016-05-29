@@ -17,8 +17,8 @@ require_once 'class/trocaURL.php';
         <script type="text/javascript" src="js/responsivo.js"></script>
     </head>
     <body onresize="responsivo()" onload="responsivo()">
-        
-            <div id='bloqueioPagina'></div>
+
+        <div id='bloqueioPagina'></div>
 
         <header>
             <a href="index.php"><img class="logoCabecalho" src="img/logo_fundo.png"/></a>
@@ -28,12 +28,12 @@ require_once 'class/trocaURL.php';
                 <div class="menuItem" onmouseout="esconderDropdown(this)">
                     <a class="menuLink" href="?pagina=portfolio" onmouseover="mostrarDropdown(this)">Portfólio</a>
                     <div class="menuDropdown" onmouseover="mostrarDropdown(this)">
-                        <a href=?pagina=design_multimidia">Design Multimídia</a>
-                        <a href=?pagina=fotografia">Fotografia</a>
-                        <a href=?pagina=interface_usabilidade">Interface e Usabilidade</a>
-                        <a href=?pagina=animacao_grafica">Animação Gráfica</a>
-                        <a href=?pagina=audio_video_digital">Áudio e Vídeo Digital</a>
-                        <a href=?pagina=culturas_midias_sociais">Culturas e Mídias Sociais</a>
+                        <a href="?pagina=design_multimidia">Design Multimídia</a>
+                        <a href="?pagina=fotografia">Fotografia</a>
+                        <a href="?pagina=interface_usabilidade">Interface e Usabilidade</a>
+                        <a href="?pagina=animacao_grafica">Animação Gráfica</a>
+                        <a href="?pagina=audio_video_digital">Áudio e Vídeo Digital</a>
+                        <a href="?pagina=culturas_midias_sociais">Culturas e Mídias Sociais</a>
                     </div>
                 </div>
                 <div class="menuItem"><a class="menuLink" href="?pagina=contato">Contato</a></div>
@@ -46,25 +46,22 @@ require_once 'class/trocaURL.php';
                 <div class="menuItem" onmouseout="esconderDropdown(this)">
                     <a class="menuLink" href="#" onclick="$('.subMenu').toggle(150)">Portfólio</a>
                     <div class="subMenu">
-                        <a href=?pagina=design_multimidia">Design Multimídia</a>
-                        <a href=?pagina=fotografia">Fotografia</a>
-                        <a href=?pagina=interface_usabilidade">Interface e Usabilidade</a>
-                        <a href=?pagina=animacao_grafica">Animação Gráfica</a>
-                        <a href=?pagina=audio_video_digital">Áudio e Vídeo Digital</a>
-                        <a href=?pagina=culturas_midias_sociais">Culturas e Mídias Sociais</a>
+                        <a href="?pagina=design_multimidia">Design Multimídia</a>
+                        <a href="?pagina=fotografia">Fotografia</a>
+                        <a href="?pagina=interface_usabilidade">Interface e Usabilidade</a>
+                        <a href="?pagina=animacao_grafica">Animação Gráfica</a>
+                        <a href="?pagina=audio_video_digital">Áudio e Vídeo Digital</a>
+                        <a href="?pagina=culturas_midias_sociais">Culturas e Mídias Sociais</a>
                     </div>
                 </div>
                 <div class="menuItem"><a class="menuLink" href="?pagina=contato">Contato</a></div>
             </menu>
         </header>
         <main>
-            <div class="conteudo">
-                <?php
-                $u = new trocaURL();
-
-                include($u->url);
-                ?>
-            </div>
+            <?php
+            $u = new trocaURL();
+            include($u->url);
+            ?>
         </main>
         <footer>
             <div id="media">
