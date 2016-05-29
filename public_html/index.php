@@ -5,20 +5,21 @@ require_once 'class/trocaURL.php';
 ?>
 
 <html>
-<head>
-    <title>Sany Fernandes</title>
-    <meta charset="UTF-8">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
+    <head>
+        <title>Sany Fernandes</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/responsivo.js"></script>
 </head>
-<body>
+<body onresize="responsivo()" onload="responsivo()">
     <header>
-        <a href="index.html"><img class="logoCabecalho" src="img/logo_fundo.png" height="120" /></a>
-        <a href="index.php"><img class="logoCabecalhoTexto" src="img/logo_texto_cabecalho.png" height="40" /></a>
+        <a href="index.html"><img class="logoCabecalho" src="img/logo_fundo.png"/></a>
+        <a href="index.php"><img class="logoCabecalhoTexto" src="img/logo_texto_cabecalho.png"/></a>
         <menu id="menu-cabecalho">
             <div class="menuItem"><a class="menuLink" href="paginas/sobre.php">Sobre</a></div>
             <div class="menuItem" onmouseout="esconderDropdown(this)">
@@ -38,11 +39,9 @@ require_once 'class/trocaURL.php';
     <main>
         <div class="conteudo">
             <?php
-            
             $u = new trocaURL();
-            
+
             include($u->url);
-            
             ?>
         </div>
     </main>

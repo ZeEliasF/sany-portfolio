@@ -15,20 +15,38 @@ header{
     background: #FF3264;
     padding: 0;
     position: relative;
+    margin: 0;
     top: 0;
     display: block;
 }
 
 .logoCabecalho{
     position:absolute;
-    top: 15px;
-    left:calc(50% - 485px);
+    height: 120px;
+    top: 20px;
+    left:20px;
+    transition: 150ms;
+}
+
+.logoCabecalhoReduzido{
+    height: 60px;
+    top: 10px;
+    left: 10px;
+    transition: 150ms;
 }
 
 .logoCabecalhoTexto{
     position:absolute;
     top: 30px;
-    left: calc(50% - 350px);
+    left: 150px;
+    height: 40px;
+    transition: 150ms;
+}
+
+.logoCabecalhoTextoReduzido{
+    height: 30px;
+    left: 80px;
+    top: 25px;
 }
 
 menu{
@@ -38,16 +56,27 @@ menu{
 }
 
 #menu-cabecalho{
-    margin: 10px calc(50% - 500px) 0 0;
+    margin: 10px 20px 0 0;
     width: auto;
     height: 70px;
     float: right;
     font-size: 16pt;
+    visibility: visible;
+    transition: 150ms;
+}
+
+.menu-cabecalhoMaior{
+    font-size: 20pt !important;
+    transition: 150ms;
 }
 
 .menuItem{
     float:left;
     max-width: 137px;
+}
+
+.menu-cabecalhoMaior .menuItem{
+    max-width: 156px;
 }
 
 .menuDropdown{
@@ -107,7 +136,7 @@ menu{
     padding: 6px 15px;
     width: 100%;
     margin: 0;
-    font-size: 12pt;
+    font-size: 0.8em;
     text-align: left;
     transition:200ms;
     color:#4C4B4B !important;
@@ -119,7 +148,6 @@ menu{
 }
 
 main{
-    width: 1000px;
     min-height: calc(100% - 168px);
     position:relative;
     height:auto;
@@ -141,8 +169,6 @@ footer{
     margin: 0 auto;
 }
 
-
-
 #media img{
     width: 30px;
 }
@@ -151,6 +177,19 @@ footer{
     height: 30px;
     width: auto !important;
     float: left;
+}
+
+.rodapeReduzido #media{
+    background: red;
+    height: 100px;
+    width: 250px;
+}
+
+.rodapeReduzido .logoRodape{
+    background: yellow;
+    float: none;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
 #media a, .logoRodape{
@@ -190,7 +229,7 @@ footer{
     text-align: center;
     line-height: 30px;
     color: #ECECEC;
-    font-size: 10pt;
+    font-size: 0.5em;
 }
 
 .conteudo{
@@ -200,23 +239,69 @@ footer{
     height:auto;
 }
 
+.conteudoTituloPerna{
+    background: url(../img/container-seta.png);
+    height: 20px;
+    width: 120px;
+    margin: 10px 0 0 20px;
+}
+
 .conteudoTitulo{
-    height:auto;
-    background-image:url(../img/post_cabecalho.png);
-    background-size: 1000px;
-    padding: 50px 0 20px 0;
+    background:#4C4B4B;
+    padding: 20px 20px 20px 0;
+    float: left;
+    display: inline-block;
+    margin: 0 0 0 20px;
     line-height: 10px;
-    font-size: 20pt;
+    font-size: 0.7em;
     font-weight: bold;
     position:relative;
     z-index:0;
     color:#ECECEC;
+    transition: 150ms;
+}
+.apresentacao img{
+    border-radius:50%;
+    float: left;
+    margin: 0 20px;
+    transition: 150ms;
+}
+
+.apresentacao p{
+    float:left;
+    font-size:0.55em;
+    line-height: normal;
+    font-weight: normal;
+    text-align: left;
+    transition: 150ms;
+}
+
+.conteudoTituloReduzido{
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    transition: 150ms;
+}
+
+.apresentacaoReduzida img{
+    margin: auto;
+    float: none;
+    width: 100%;
+    transition: 150ms;
+}
+
+.apresentacaoReduzida p{
+    text-align: center;
+    float: none;
+    margin: 10px 0;
+    padding: 0;
+    transition: 150ms;
 }
 
 .controlButtons{
     float: left;
     width: 100%;
-    font-size:10px;
+    font-size:0.5em;
 }
 
 .controlButtons a{
@@ -233,7 +318,7 @@ footer{
     margin: 5px;
     font-weight: bold;
     position:relative;
-    font-size:12px;
+    font-size:0.7em;
 }
 .controlButtons a:hover{
     background:#FF3264;
@@ -242,15 +327,16 @@ footer{
 
 .conteudoMeio{
     float:left;
-    width: 970px;
-    margin: 15px;
+    width: fit-content;
+    margin: 20px;
+    background: yellow;
 }
 
 .conteudoMeio h1{
     float:left;
     width:100%;
     margin: 10px 0;
-    font-size: 20pt;
+    font-size: 1em;
     font-weight: bold;
     text-align:left;
     color:#FF3264;
@@ -258,7 +344,7 @@ footer{
 
 .conteudoMeio p{
     text-align: justify;
-    font-size: 12pt;
+    font-size: 0.7em;
     color: #4C4B4B;
     float:left;
 }
@@ -302,7 +388,7 @@ form a{
     background:#FF3264 !important;
     padding: 10px 30px;
     text-decoration: none;
-    font-size: 16x;
+    font-size: 0.8em;
     color: #fff;
     float: right;
     border-radius: 10px;
@@ -311,33 +397,32 @@ form a{
 
 .disciplina{
     background: #FF3264;
-    border-radius:50%;
-    margin: 10px 36px;
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    border-radius: 50%;
+    font-size: 20px;
+    min-width: 250px;
+    margin:  1.666%;
     float: left;
 }
 
 .disciplina a{
-    width: 250px;
-    height: 250px;
     margin: 0;
     float: left;
     text-decoration: none;
 }
 
-.disciplina b{
+.disciplinaTexto{
     -webkit-filter: blur(20px);
     position: relative;
-    top: -165px;
-    font-size: 16pt;
+    height: fit-content;
+    top: -107.06%;
     color:#ECECEC;
     z-index: 0;
     transition: 300ms;
     transition-timing-function: ease;
 }
 
-.disciplina a:hover b{
+.disciplina a:hover .disciplinaTexto{
     -webkit-filter: blur(0px);
     transition: 300ms;
     transition-timing-function: ease;
@@ -377,7 +462,7 @@ form a{
     margin: 5px;
     font-weight: bold;
     position:relative;
-    font-size: 14px;
+    font-size: 0.75em;
 }
 .download a:hover{
     background:#4c4b4b;

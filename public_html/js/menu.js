@@ -5,11 +5,9 @@
  */
 
 function mostrarDropdown(elemento) {
-        $(elemento).parent().children(".menuDropdown").addClass("menuDropdownVisivel");
+    $(elemento).parent().children(".menuDropdown").addClass("menuDropdownVisivel");
 }
 
 function esconderDropdown(elemento) {
     $(elemento).children().removeClass("menuDropdownVisivel");
 }
-
-
