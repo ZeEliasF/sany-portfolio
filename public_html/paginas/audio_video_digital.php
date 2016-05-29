@@ -14,8 +14,8 @@
             <b>Carga Horária:</b> 55 horas / 60 Aulas<br>
             <b>Professor:</b> Diogo Maia<br><br>
             <b>EMENTA</b><br>
-            Estudo dos sistemas de televisão e formatos de arquivos de áudio e vídeo para utilização em mídias diversas. Edição de áudio e vídeo digital; produção de vídeos através de imagens estáticas (stop‐motion); técnicas de composição; renderização de arquivos para diversos tipos de saída.<br><br>
-            <b>OBJETIVOS</b>
+            Estudo dos sistemas de televisão e formatos de arquivos de áudio e vídeo para utilização em mídias diversas. Edição de áudio e vídeo digital; produção de vídeos através de imagens estáticas (stop�?motion); técnicas de composição; renderização de arquivos para diversos tipos de saída.<br><br>
+            <b>OBJETIVOS</b><br>
             Ao final do curso o estudante será capacitado a trabalhar com captura, edição de vídeos digitais e aplicar
             efeitos visuais e sonoros a vídeos.
         </p>
@@ -72,7 +72,23 @@
         <h1>#03 - Stop Motion</h1>
         <p>
             Criaçao de um video em stop motion<br>
-            <iframe width="950" height="560" src="https://www.youtube.com/embed/d-MV5P7052k" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" max-widht="800px" height="560" src="https://www.youtube.com/embed/d-MV5P7052k" frameborder="0" allowfullscreen></iframe>
+        </p>
+    </div>
+    
+        <div class="conteudoMeio">
+        <a name="03"></a>
+        <div class="controlButtons">
+            <a href="#intro">Introdução</a>
+            <a href="#01">Trab #01</a>
+            <a href="#02">Trab #02</a>
+        </div>
+
+        <h1>#04 - Comercial</h1>
+        <p>
+            Criaçao de um comercial divulgando os cursos de Mulm�dia e Design Gr�fico Da Faculdade Senac
+            <br>
+            <iframe width="100%" max-widht="800px" height="560" src="https://www.youtube.com/embed/qBrX0j9QR-0" frameborder="0" allowfullscreen></iframe>
         </p>
     </div>
 </div>

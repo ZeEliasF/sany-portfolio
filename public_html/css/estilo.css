@@ -462,7 +462,7 @@ footer{
     float:left;
     width:100%;
     margin: 10px 0;
-    font-size: 1em;
+    font-size: 0.6em;
     font-weight: bold;
     text-align:left;
     color:#FF3264;
@@ -470,7 +470,7 @@ footer{
 
 .conteudoMeio p{
     text-align: justify;
-    font-size: 0.7em;
+    font-size: 0.4em;
     color: #4C4B4B;
     width: 100%;
     float:left;
@@ -505,17 +505,19 @@ form label{
     font-weight: bold;
     text-align: left;
     float: left;
+    margin-bottom: -20px;
+    font-size: 0.6em;
 }
 
 form textarea{
-    height: 200px;
+    height: 300px;
     resize: none;
 }
 form a{
     background:#FF3264 !important;
     padding: 10px 30px;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.4em;
     color: #fff;
     float: right;
     border-radius: 10px;
@@ -589,10 +591,14 @@ form a{
     margin: 5px;
     font-weight: bold;
     position:relative;
-    font-size: 0.75em;
+    font-size: 0.4em;
 }
 .download a:hover{
     background:#4c4b4b;
+}
+iframe { 
+max-width: 800px; 
+min-width: 400px; 
 }
 
 .clear{
