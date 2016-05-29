@@ -22,8 +22,8 @@ class contatoController{
             $mail->SMTPAuth = true;
             $mail->Host = "smtp.gmail.com"; //Host do GMAIL
             $mail->Port = "587"; //Porta do GMAIL
-            $mail->Username = "sannyrock@gmail.com"; //E-mail da Sany
-            $mail->Password = "Senha do E-mail da Sany"; //Põe a senha do e-mail da Sany
+            $mail->Username = "saanyrock@gmail.com"; //E-mail da Sany
+            $mail->Password = "ironman1963"; //Põe a senha do e-mail da Sany
 
 
             //Define o remetente
@@ -32,7 +32,6 @@ class contatoController{
             $mail->FromName = 'Sany Fernandes';
             //Define os destinatários
             $mail->AddAddress('saanyrock@gmail.com', 'Sany Fernandes'); //E-mail da Sany
-            $mail->AddAddress('Professor@diogomaia.com.br'); //E-mail do professor
             
             //Define os Dados Técnicos da Mensagem
             $mail->IsHTML(true);
