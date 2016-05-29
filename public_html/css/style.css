@@ -1,5 +1,8 @@
 .rg-image-wrapper{
-	position:relative;
+	float: left;
+        width: 95%;
+        margin: 0 0 20px 0;
+        height: 100%;
 	padding:20px 30px;
 	background: #4c4b4b;
 	min-height:20px;
@@ -40,8 +43,9 @@
 	position:relative;
 }
 .rg-caption p{
-	font-size:0.8em;
+	font-size:0.4em;
 	letter-spacing: 2%;
+        color: #EBEBEB;
 	font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
 	line-height: 160%;
 	padding:0 16%;
