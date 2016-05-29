@@ -2,12 +2,22 @@
 
 class conexaoSany {
 
+    //Conexão SERVER
     private $host = "localhost";
     private $user = "u737233951_sany";
     private $password = "ironman1963";
     private $port = "3306";
     private $con = NULL;
     private $dbname = "u737233951_sany";
+
+    //Conexão LOCALHOST
+    //private $host = "localhost";
+    //private $user = "root";
+    //private $password = "";
+    //private $port = "3306";
+    //private $con = NULL;
+    //private $dbname = "sany-portifolio";
+
 
     public function openSany() {
 
