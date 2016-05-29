@@ -376,7 +376,7 @@ footer{
 .sobre .conteudoMeio img{
     width: 25%;
     border-radius: 50%;
-    margin: 20px;
+    margin: 2.5%;
     float: right;
 }
 
@@ -387,6 +387,11 @@ footer{
 .apresentacao{
     width: fit-content;
     padding: 20px 20px 0px 0;
+}
+
+.apresentacaoReduzida{
+    margin: 0;
+    width: 100%;
 }
 .apresentacao img{
     border-radius:50%;
@@ -405,8 +410,8 @@ footer{
 }
 
 .conteudoTituloReduzido{
-    margin: 0;
-    padding: 20px 0;
+    margin: 0 -20px 20px -20px;
+    padding: 20px;
     width: 100%;
     transition: 150ms;
 }
@@ -487,7 +492,8 @@ footer{
 /*formulário */
 
 form{
-    width:500px;
+    width:100%;
+    max-width: 500px;
     margin: auto;
 }
 

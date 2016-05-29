@@ -18,13 +18,13 @@ class contatoController{
         if($this->contato->cadastraContato()){
             echo "<script type='text/javascript'>
                   alert('Sua mensagem foi enviada!');
-                  window.location = '../paginas/contato.php';
+                  window.location = '../index.php?pagina=contato';
                   </script>";
         }
         else{
             echo "<script type='text/javascript'>
                   alert('Erro ao enviar a mensagem!');
-                  window.location = '../paginas/contato.php';
+                  window.location = '../index.php?pagina=contato';
                   </script>";
         }
 

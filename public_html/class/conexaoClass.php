@@ -3,11 +3,11 @@
 class conexaoSany {
 
     private $host = "localhost";
-    private $user = "root";
-    private $password = "";
+    private $user = "u737233951_sany";
+    private $password = "ironman1963";
     private $port = "3306";
     private $con = NULL;
-    private $dbname = "sany-portfolio";
+    private $dbname = "u737233951_sany";
 
     public function openSany() {
 

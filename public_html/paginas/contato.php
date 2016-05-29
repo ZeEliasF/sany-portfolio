@@ -3,7 +3,7 @@
     <div class="conteudoTituloPerna"></div>   
     <div class="conteudoTitulo">Contatos</div>
     <div class="conteudoMeio">
-        <form action="../class/acaoCadastrar.php" method="post">
+        <form action="class/acaoCadastrar.php" method="post">
             <label for="nome">Nome:</label>
             <br />
             <input id="nome" name="nome" type="text" />

@@ -6,6 +6,8 @@ function responsivo() {
         $(".logoCabecalhoTexto").addClass("logoCabecalhoTextoReduzido");
         $(".conteudoTitulo").addClass("conteudoTituloReduzido");
         $(".apresentacao").addClass("apresentacaoReduzida");
+        $(".menu-compacto-trigger").show(300,"swing");
+        $("#menu-cabecalho").hide(300, "swing");
         $(".conteudoTituloPerna").hide(300, "swing");
         $("main").css("top", "20px");
         $("footer").addClass("rodapeReduzido");
@@ -20,11 +22,15 @@ function responsivo() {
         $("main").css("top", "55px");
         $("footer").removeClass("rodapeReduzido");
     } else if (window.innerWidth < 1900) {
+        $(".apresentacao").removeClass("apresentacaoReduzida");
+        $(".conteudoTitulo").removeClass("conteudoTituloReduzido");
         $("#menu-cabecalho").show(300, "swing");
         $(".menu-compacto-trigger").hide(300,"swing");
         esconderMenuCompacto();
         $("#menu-cabecalho").removeClass("menu-cabecalhoMaior");
     } else {
+        $(".apresentacao").removeClass("apresentacaoReduzida");
+        $(".conteudoTitulo").removeClass("conteudoTituloReduzido");
         $("#menu-cabecalho").addClass("menu-cabecalhoMaior");
     }
 
