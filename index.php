@@ -11,6 +11,7 @@ require_once 'class/trocaURL.php';
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#FF3264">
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="stylesheet" type="text/css" href="css/elastislide.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
